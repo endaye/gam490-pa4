@@ -10,6 +10,7 @@ namespace DataDriven
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("\nYuancheng Zhang's output\n");
             Tests.CalcTest();
         }
     }

@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataDriven
 {
-    enum Calc_Type
-    {
-        CALC_SET,
-        CALC_ADD,
-        CALC_SUB,
-        CALC_MULT
-    }
-
-    struct Calc_Data
-    {
-        public Calc_Type type;
-        public int value;
-    }
-
+   
+    /*
     enum FSM_Type
     {
         FSM_SET,
@@ -32,6 +20,7 @@ namespace DataDriven
         public Byte input;
         public FSM_StateEnum state;
     }
+    */
 
     class Tests
     {
@@ -228,7 +217,7 @@ namespace DataDriven
             }
 
         }
-
+        /*
         static public void FSMTest()
         {
 
@@ -722,6 +711,7 @@ namespace DataDriven
             // now that they are in queue, process them
             inQueue.process();
         }
+         */ 
     }
 
 
