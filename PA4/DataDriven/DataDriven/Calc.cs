@@ -22,6 +22,8 @@ namespace DataDriven
 
     class Calc
     {
+        
+
         public Calc()
         {
             this.ans = 0;
@@ -55,32 +57,38 @@ namespace DataDriven
 
         public void set(int inData)
         {
-            System.Console.Write("calc():    set({0, 2}) : ", inData);
             this.ans = inData;
-            System.Console.WriteLine("{0}", this.ans);
+            this.dump(" set", inData);
         }
 
         public void add(int inData)
         {
-            System.Console.Write("calc():    add({0, 2}) : ", inData);
             this.ans += inData;
-            System.Console.WriteLine("{0}", this.ans);
+            this.dump(" add", inData);
         }
 
         public void sub(int inData)
         {
-            System.Console.Write("calc():    sub({0, 2}) : ", inData);
             this.ans -= inData;
-            System.Console.WriteLine("{0}", this.ans);
+            this.dump(" sub", inData);
         }
 
         public void mult(int inData)
         {
-            System.Console.Write("calc():   mult({0, 2}) : ", inData);
             this.ans *= inData;
-            System.Console.WriteLine("{0}", this.ans);
+            this.dump("mult", inData);
         }
 
-        public int ans;
+        public int getAnswer()
+        {
+            return this.ans;
+        }
+
+        private void dump(String type, int inData)
+        {
+            System.Console.WriteLine("calc():   {0}({1, 2}) : {2}", type, inData, this.ans);
+        }
+
+        private int ans;
     }
 }

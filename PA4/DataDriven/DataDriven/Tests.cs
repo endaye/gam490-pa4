@@ -7,20 +7,6 @@ using System.Threading.Tasks;
 namespace DataDriven
 {
    
-    /*
-    enum FSM_Type
-    {
-        FSM_SET,
-        FSM_ADV
-    }
-
-    struct FSM_Data
-    {
-        public FSM_Type type;
-        public Byte input;
-        public FSM_StateEnum state;
-    }
-    */
 
     class Tests
     {
@@ -217,7 +203,7 @@ namespace DataDriven
             }
 
         }
-        /*
+        
         static public void FSMTest()
         {
 
@@ -592,6 +578,7 @@ namespace DataDriven
 
         }
 
+        /*
         static public void InterLeaved()
         {
             System.Console.WriteLine("\n------------ Interleaved Tests(): with data driven queue ---------------\n");
