@@ -12,6 +12,7 @@ namespace DataDriven
         {
             System.Console.WriteLine("\nYuancheng Zhang's output\n");
             Tests.CalcTest();
+            Tests.FSMTest();
         }
     }
 }
