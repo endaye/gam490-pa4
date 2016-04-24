@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace DataDriven
 {
-   
-
     class Tests
     {
         static public void CalcTest()
@@ -578,7 +576,7 @@ namespace DataDriven
 
         }
 
-        /*
+        
         static public void InterLeaved()
         {
             System.Console.WriteLine("\n------------ Interleaved Tests(): with data driven queue ---------------\n");
@@ -698,8 +696,5 @@ namespace DataDriven
             // now that they are in queue, process them
             inQueue.process();
         }
-         */ 
     }
-
-
 }
